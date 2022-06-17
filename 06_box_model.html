@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box Model / Margin & Padding</title>
+  <style>
+    /* Add " box-sizing : border-box" so that padding does not affect width of an element. */
+    /* If we add padding without border-box then div size gets increased with padding and layout 
+    gets changed. To avoid this border-box is used. Using this div size remains same even if padding
+     is used. */
+    /* CSS Reset */
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .box {
+      background-color: #333;
+      color: #fff;
+      width: 500px;
+
+      /* Padding => inside border */
+      /* Padding on all sides */
+      padding: 20px;
+
+      /* Padding per side */
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+
+      /* Padding Shorthand => top, right, bottom, left */
+      padding: 10px 20px 10px 20px;
+
+      /* Padding Shorthand => top right-left bottom */
+      padding: 10px 20px 10px;
+
+      /* Padding Shorthand => top-bottom right-left */
+      padding: 10px 20px;
+
+
+      /* Margin => outside border */
+      /* Margin on all sides */
+      margin: 20px;
+
+      /* Margin per side */
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+
+      /* Margin Shorthand => top, right, bottom, left */
+      margin: 10px 20px 10px 20px;
+
+      /* Margin Shorthand => top right-left bottom */
+      margin: 10px 20px 10px;
+
+      /* Margin Shorthand => top-bottom right-left */
+      margin: 10px 20px;
+
+    }
+
+    .box h3 {
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis nihil minima itaque. Omnis cum
+      accusamus laboriosam eligendi. Quisquam, cumque.</p>
+  </div>
+  <div class="box">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam blanditiis nihil minima itaque. Omnis cum
+      accusamus laboriosam eligendi. Quisquam, cumque.</p>
+  </div>
+</body>
+
+</html>

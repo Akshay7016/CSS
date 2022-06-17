@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float & Align</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6em;
+    }
+
+    #container {
+      /* For container always use max-width property for responsive website */
+      max-width: 700px;
+      margin: 10px auto;
+    }
+
+    .box {
+      background-color: #333;
+      border: 3px solid red;
+      color: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .box p {
+      /* Text align */
+      text-align: left;
+      text-align: right;
+      text-align: center;
+      text-align: justify;
+    }
+
+    #box-2 {
+      float: left;
+      width: 68%;
+    }
+
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+
+    /* If there are two elements which uses "float" property and if we want to add normal element 
+    after that two elements. Then that 3rd element will placed backside of that two elements.
+    To avoid these, always use "clear" property after float elements. */
+    .clr {
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis et quo, expedita beatae sit aut incidunt
+        exercitationem illum repellat placeat.</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis et quo, expedita beatae sit aut incidunt
+        exercitationem illum repellat placeat.</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis et quo, expedita beatae sit aut incidunt
+        exercitationem illum repellat placeat.</p>
+    </div>
+
+    <div class="clr"></div>
+
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis et quo, expedita beatae sit aut incidunt
+        exercitationem illum repellat placeat.</p>
+    </div>
+  </div>
+</body>
+
+</html>
