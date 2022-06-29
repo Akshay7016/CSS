@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh & Vw Units</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background: #333 url(./img/stars.jpg) no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 15rem;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            margin: 1rem 0;
+        }
+
+        .btn {
+            /* As <a> tag is inline element and here used as button. So we need to display it as inline-block */
+            display: inline-block;
+            text-decoration: none;
+            background: #f4f4f4;
+            color: #333;
+            padding: 0.75rem 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        /* Landscape */
+        @media (max-height: 450px) {
+            header {
+                padding-top: 5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome To Our Website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam rem distinctio sed quo dignissimos labore
+            fuga consequuntur officiis omnis excepturi.</p>
+        <a href="#" class="btn">Find More</a>
+    </header>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum perferendis cupiditate temporibus provident
+            repudiandae, fuga consequuntur laudantium est omnis tempora, excepturi quod earum rem illo laborum cum?
+            Vitae, velit expedita hic iusto mollitia quis nobis voluptate vero? Impedit voluptatem aliquam quia sint
+            voluptate? Distinctio porro quam, ducimus commodi dolorem sint.</p>
+    </section>
+</body>
+
+</html>
